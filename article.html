@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0, width=device-width">
+    <title>曉笏-web前端开发技术</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div id="header_box">
+            <div id="header" class="f-fix">      
+                <h1 id="logo"><a href="index.html"><img src="images/avatar.jpg" alt="曉笏-Web"><span>·暁ε笏η</span></a></h1>
+                <p>放弃规则 放纵去爱 放肆自己 放空未来</p>
+                <a href="javascript:;" id="toggle_mnu"><i>展开/收起菜单</i></a>
+                <ul class="nav f-fix">
+                    <li><a href="index.html" title="首页">首页</a></li>
+                    <li><a href="#" title="HTML+CSS">HTML+CSS</a></li>
+                    <li><a href="#" title="JAVASCRIPT">JAVASCRIPT</a></li>
+                    <li><a href="#" title="前端资讯">前端资讯</a></li>
+                    <li><a href="resume/index.html" title="关于我">关于我</a></li>
+                    <li><a href="#" title="随记">随记</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="container" class="sub_cont">
+            <div id="aside">
+                <div class="aside-block">
+                    <h2>联系我</h2>
+                    <img src="images/1.jpg" class="unique_img">
+                    <p>终于拥有了一个个人博客网站，好开心。本站主要分享前端学习中的点滴，展示个人作品，记录人生中的一些感悟。欢迎通过下列方式联系我。</p>
+                    <a href="#" class="link1">953554202@qq.com</a>
+                    <a href="#" class="link1">Wechat：1xh1991_</a>
+                </div>
+                <div class="aside-block">
+                    <h2>文章分类</h2>
+                    <ul class="list">
+                        <li><a href="#" title="HTML+CSS">HTML+CSS(99)</a></li>
+                        <li><a href="#" title="JAVASCRIPT">JAVASCRIPT(99)</a></li>
+                        <li><a href="#" title="前端资讯">前端资讯(99)</a></li>
+                    </ul>
+                </div>
+                <div class="aside-block">
+                    <h2>热门文章</h2>
+                    <ul class="list">
+                        <li><a href="#" title="">用 Stellar.js 制作视差滚动效果</a></li>
+                        <li><a href="#" title="">用 Stellar.js 制作视差滚动效果</a></li>
+                        <li><a href="#" title="">用 Stellar.js 制作视差滚动效果</a></li>
+                    </ul>
+                </div>
+                <div class="aside-block">
+                    <h2>标签云</h2>
+                    <div class="tags">
+                        <a href="#" title="nodejs">nodejs</a>
+                        <a href="#" title="brackets">brackets</a>
+                        <a href="#" title="sublime">sublime</a>
+                        <a href="#" title="react">react</a>
+                        <a href="#" title="Ajax">Ajax</a>
+                    </div>
+                </div>
+            </div>
+            <div id="content">
+                <div class="content">
+                    <article>
+                        <div id="article">
+                            <hgroup>
+                                <h1>用 Stellar.js 制作视差滚动效果</h1>
+                                <h2>作者：曉笏&nbsp;&nbsp;&nbsp;更新时间：2015年08月31日</h2>
+                            </hgroup>
+                            <div class="innerCont">
+                                <p>近些年讨论得很热烈的设计趋势是视觉差滚动效果。不管你喜不喜欢，很多网站都在用它。在本教程中，我会介绍视觉差滚动和用jQuery插件Stellar.js来制作视觉差滚动效果。</p>
+                                <h3>视差滚动（Parallax Scrolling）是什么？</h3>
+                                <p>视差滚动是当用户滚动页面时，前景和背景以不同的速度移动，从而创造出3D效果。 这种效果可以给网站一个很好的补充，但如果滥用，就会很烦人。有些完全由这种效果驱动的网站会让人觉得不优雅。 因为这种效果通常使用大图像做背景，网站资源大量增加，导致加载非常缓慢。</p>
+                                <pre class="brush: jscript;">
+                                    $(function () {
+                                        $("input[name=article_support]").live('click', function () {
+                                            $("#tbCommentBody").val("文章不错，支持一下 (*^_^*)  ");
+                                            $("#btn_comment_submit").trigger('click');
+                                            $("html,body").animate({ scrollTop: $("#divCommentShow").offset().top }, "slow"); 
+                                        });
+                                    });
+                                </pre>
+                                <pre class="brush: php;">
+                                    &lt;?php
+                                        echo 'lxh';
+                                    ?>
+                                </pre>
+                                <pre class="brush:xml;">
+                                    &lt;script src="path/to/jquery/jquery.min.js">&lt;/script>
+                                </pre>
+                                <pre class="brush:css;">
+                                   &lt;style>
+                                        .content{
+                                            background-attachment: fixed;
+                                            height: 400px;
+                                        }
+                                   &lt;/style>
+                                </pre>
+                            </div><!-- innerCont -->
+                            <div class="artiInfo">
+                                <p><strong>当前标签：</strong><a href="#">Stellar.js</a></p>
+                                <p><strong>版权说明：</strong>如非注明，本站文章均为原创，转载请注明出处和附带本文链接。</p>
+								<p>
+								<div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more">分享到：</a><a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina">新浪微博</a><a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone">QQ空间</a><a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin">微信</a><a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq">腾讯微博</a><a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren">人人网</a></div>
+				<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":["copy","sqq","kaixin001","tqf","tieba","douban","youdao","sdo","mail","isohu","wealink","ty","fbook","twi","linkedin","h163","evernotecn","print"],"bdPic":"","bdStyle":"1","bdSize":"16"},"share":{"bdSize":16},"image":{"viewList":["tsina","qzone","weixin","tqq","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","qzone","weixin","tqq","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+				</script>
+								</p>								
+                            </div>
+                        </div>
+                    </article>
+                    <section>
+                        <ul class="differePage">
+                            <li>上一篇：<a href="#">harmmer.js学习</a></li>
+                            <li>下一篇：没有了</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <div class="comment"><div id="SOHUCS"></div></div> 
+                        <script type="text/javascript"> 
+                        (function(){ 
+                        var appid = 'cysjlaash'; 
+                        var conf = '53f788dc0eb5a11c7ae123d167282d7c'; 
+                        var width = window.innerWidth || document.documentElement.clientWidth; 
+                        if (width < 960) { 
+                        window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id=' + appid + '&conf=' + conf + '"><\/script>'); } else { var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}c.appendChild(b)};loadJs("http://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})}); } })(); </script>  
+                    </section>
+                    <!-- http://changyan.kuaizhan.com/help/f-source-id.html sourceid配置 -->
+                </div>
+            </div>
+            <a href="javascript:;" id="side_toggle">&lt;</a>
+        </div>
+    </section>
+    <footer>
+        <div id="footer">
+            <div class="foo-block copyright">
+                <i></i>
+                <strong>Copyright&copy;2016 Lxh</strong>
+                <span>All Rights Reserved</span>
+            </div>
+            <div class="foo-block owner">
+                <i></i>
+                <strong>Designed By</strong>
+                <span>·暁ε笏η Lynn</span>
+            </div>
+            <div class="foo-block website">
+                <i></i>
+                <strong>Website</strong>
+                <span>www.linxiaohu.com<br><a href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备16010751号</a></span>
+            </div>
+            <div class="foo-block contact">
+                <i></i>
+                <strong>Contact me</strong>
+                <span>953554202@qq.com</span>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/base.js"></script>
+    <!-- SyntaxHighlighter -->
+    <link type="text/css" rel="Stylesheet" href="css/shCoreDefault.css" />
+    <script src="js/shCore.js"></script>
+    <script  src="js/shAutoloader.js"></script>
+    <script>
+        function path() {
+            var args = arguments, result = [];
+            for (var i = 0; i < args.length; i++)
+                result.push(args[i].replace('@', 'scripts/'));
+            return result
+        };
+
+        SyntaxHighlighter.autoloader.apply(null, path(
+            'applescript            @shBrushAppleScript.js',
+            'actionscript3 as3      @shBrushAS3.js',
+            'bash shell             @shBrushBash.js',
+            'coldfusion cf          @shBrushColdFusion.js',
+            'cpp c                  @shBrushCpp.js',
+            'c# c-sharp csharp      @shBrushCSharp.js',
+            'css                    @shBrushCss.js',
+            'delphi pascal          @shBrushDelphi.js',
+            'diff patch pas         @shBrushDiff.js',
+            'erl erlang             @shBrushErlang.js',
+            'groovy                 @shBrushGroovy.js',
+            'java                   @shBrushJava.js',
+            'jfx javafx             @shBrushJavaFX.js',
+            'js jscript javascript  @shBrushJScript.js',
+            'perl pl                @shBrushPerl.js',
+            'php                    @shBrushPhp.js',
+            'text plain             @shBrushPlain.js',
+            'py python              @shBrushPython.js',
+            'ruby rails ror rb      @shBrushRuby.js',
+            'sass scss              @shBrushSass.js',
+            'scala                  @shBrushScala.js',
+            'sql                    @shBrushSql.js',
+            'vb vbnet               @shBrushVb.js',
+            'xml xhtml xslt html    @shBrushXml.js')
+     );
+        SyntaxHighlighter.all();
+    </script>
+</body>
+</html>
